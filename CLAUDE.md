@@ -19,11 +19,11 @@ Incremental agents. Confirm each before proceeding.
     silverBright: '#e8eef4'
     red: '#cc2200'
     muted: '#7a8088'
-- 8 hero placeholders
+- 12 hero placeholders
 - Confirm dev server
 
 ### Agent 2 — Components
-- HeroCarousel.tsx (8 slides)
+- HeroCarousel.tsx (12 slides)
 - FundingMilestoneChart.tsx: visual timeline of SC funding milestones
   (use SVG/CSS chart, no external chart library required)
 - StatCard.tsx: large number + label (e.g., "$700M+ Raised", "3M+ Backers")
