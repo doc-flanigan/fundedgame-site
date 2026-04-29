@@ -12,19 +12,19 @@ export default function HomePage() {
     <main className="relative">
       {/* HERO */}
       <HeroCarousel className="min-h-[80vh]">
-        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-red/40 bg-crimsonMid/60 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-silver/90 backdrop-blur-sm">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-red/40 bg-crimsonMid/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-silver/90 backdrop-blur-sm sm:px-4 sm:text-xs sm:tracking-[0.25em]">
             <span className="h-1.5 w-1.5 rounded-full bg-red" />
             Crowdfunding world record · 2024
           </div>
-          <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-silverBright drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] md:text-7xl lg:text-8xl">
+          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-silverBright drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] sm:text-5xl md:text-7xl lg:text-8xl">
             The Most Funded
             <br />
             <span className="bg-gradient-to-r from-silverBright via-red to-silverBright bg-clip-text text-transparent">
               Game Ever Made
             </span>
           </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-silver sm:mt-8 sm:text-base md:text-lg">
             Nearly <strong className="text-silverBright">$1 billion</strong>{' '}
             raised from more than{' '}
             <strong className="text-silverBright">6 million backers</strong>.
