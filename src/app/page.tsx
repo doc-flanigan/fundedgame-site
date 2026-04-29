@@ -25,9 +25,9 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
-            Over <strong className="text-silverBright">$700 million</strong>{' '}
-            raised. More than{' '}
-            <strong className="text-silverBright">3 million backers</strong>.
+            Nearly <strong className="text-silverBright">$1 billion</strong>{' '}
+            raised from more than{' '}
+            <strong className="text-silverBright">6 million backers</strong>.
             One ambitious space sim that quietly broke every crowdfunding
             record in human history. This is the story of{' '}
             <em>Star Citizen</em>.

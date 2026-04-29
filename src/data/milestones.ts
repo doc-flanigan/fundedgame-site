@@ -7,8 +7,8 @@ export type Milestone = {
 
 /**
  * Cumulative crowdfunding totals for Star Citizen across the years.
- * Sources: publicly reported RSI funding figures, year-end announcements.
- * Numbers are rounded to the nearest million for visual clarity.
+ * Current totals (April 2026) sourced from ccugame.app/statistics/funding-dashboard.
+ * Earlier years are publicly reported RSI funding figures, rounded for visual clarity.
  */
 export const MILESTONES: Milestone[] = [
   { year: 2012, amount: 6, label: 'Kickstarter', note: 'Original campaign closes at $6.2M — already a record for crowdfunding.' },
@@ -23,22 +23,23 @@ export const MILESTONES: Milestone[] = [
   { year: 2021, amount: 412, label: '$400M crossed', note: 'Squadron 42 progress updates resume.' },
   { year: 2022, amount: 500, label: 'Half a billion', note: 'Half-billion-dollar milestone hit a decade after Kickstarter.' },
   { year: 2023, amount: 600, label: '$600M', note: 'Pyro system reveal energizes the community.' },
-  { year: 2024, amount: 700, label: 'Most funded ever', note: 'Star Citizen surpasses $700M — no other crowdfunded project comes close.' },
+  { year: 2024, amount: 700, label: '$700M crossed', note: 'Star Citizen surpasses $700M — no other crowdfunded project comes close.' },
+  { year: 2025, amount: 855, label: 'Closing on a billion', note: 'Backers add another $155M in a single year, pushing cumulative funding past $850M.' },
 ];
 
 export const HEADLINE_STATS = [
   {
-    value: '$700M+',
+    value: '$967M+',
     label: 'Raised from backers',
-    sub: 'Largest crowdfunded project in history',
+    sub: 'Live total as of April 2026 — closing on $1 billion',
   },
   {
-    value: '3M+',
+    value: '6.4M+',
     label: 'Individual backers',
-    sub: 'A pledge for every household in Chicago',
+    sub: 'More than the population of Denmark',
   },
   {
-    value: '13 yrs',
+    value: '14 yrs',
     label: 'In active development',
     sub: 'Since the 2012 Kickstarter that started it all',
   },

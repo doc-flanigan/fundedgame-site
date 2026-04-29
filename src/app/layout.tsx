@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: '%s · highestfundedgame.com',
   },
   description:
-    'Star Citizen is the most crowdfunded project in history with over $700 million raised from more than 3 million backers. Here\'s the story.',
+    'Star Citizen is the most crowdfunded project in history — nearly $1 billion raised from more than 6 million backers. Here\'s the story.',
   alternates: {
     canonical: '/',
   },
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     title:
       "The Most Funded Game in History — Star Citizen's Record-Breaking Crowdfunding Story",
     description:
-      'Over $700 million raised. 3+ million backers. The story of the most crowdfunded project in human history.',
+      'Nearly $1 billion raised. 6+ million backers. The story of the most crowdfunded project in human history.',
     images: ['/images/hero/hero-01.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Most Funded Game in History',
     description:
-      'Star Citizen — over $700M raised, 3M+ backers, the largest crowdfunding story ever told.',
+      'Star Citizen — nearly $1B raised, 6M+ backers, the largest crowdfunding story ever told.',
     images: ['/images/hero/hero-01.jpg'],
   },
   robots: {

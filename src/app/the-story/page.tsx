@@ -9,12 +9,12 @@ import { MILESTONES } from '@/data/milestones';
 export const metadata: Metadata = {
   title: 'The Story — How Star Citizen Became the Most Funded Game in History',
   description:
-    'From a 2012 Kickstarter asking for $500,000 to over $700 million raised — the full story of Star Citizen, the largest crowdfunded project in human history.',
+    'From a 2012 Kickstarter asking for $500,000 to nearly $1 billion raised — the full story of Star Citizen, the largest crowdfunded project in human history.',
   alternates: { canonical: '/the-story' },
   openGraph: {
     title: 'How Star Citizen Became the Most Funded Game in History',
     description:
-      'From $500,000 ask to $700M+ raised. The full story of the largest crowdfunding campaign ever.',
+      'From a $500,000 ask to nearly $1B raised. The full story of the largest crowdfunding campaign ever.',
     images: ['/images/hero/hero-04.jpg'],
   },
 };
@@ -49,11 +49,11 @@ export default function StoryPage() {
           </h1>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
             In October 2012, a former game designer named Chris Roberts asked
-            the internet for half a million dollars. By the time the dust
-            settled a decade later, more than three million people had
-            contributed over $700 million to the project he was pitching —
-            outpacing every other crowdfunded campaign on record by a margin
-            that almost looks like a typo.
+            the internet for half a million dollars. Fourteen years later,
+            more than 6.4 million people have contributed nearly a billion
+            dollars to the project he was pitching — outpacing every other
+            crowdfunded campaign on record by a margin that almost looks like
+            a typo.
           </p>
         </div>
       </header>
@@ -66,7 +66,7 @@ export default function StoryPage() {
               The arc
             </div>
             <h2 className="mt-2 font-display text-3xl text-silverBright md:text-4xl">
-              13 years of cumulative funding
+              14 years of cumulative funding
             </h2>
             <FundingMilestoneChart variant="full" className="mt-8" />
           </div>
@@ -185,7 +185,10 @@ export default function StoryPage() {
           In 2023, RSI announced the Pyro star system, the project&rsquo;s
           first major addition outside Stanton. The reveal kicked off another
           wave of pledges. By 2024, Star Citizen had crossed $700 million in
-          total crowdfunding.
+          total crowdfunding. By April 2026, that number stood at over $967
+          million from more than 6.4 million backers — within striking
+          distance of an even rarer milestone: a single crowdfunded project
+          crossing $1 billion.
         </p>
         <p>
           To put that in perspective: the next-closest video game on the

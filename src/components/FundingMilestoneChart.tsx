@@ -15,9 +15,12 @@ const VIEWBOX_H_FULL = 460;
 function buildScales(height: number) {
   const minYear = MILESTONES[0].year;
   const maxYear = MILESTONES[MILESTONES.length - 1].year;
-  const maxAmount = Math.ceil(
-    Math.max(...MILESTONES.map((m) => m.amount)) / 100,
-  ) * 100;
+  // Anchor the y-axis ceiling to $1B (or higher once we cross it) so the
+  // chart visually reinforces the "approaching a billion" framing.
+  const maxAmount = Math.max(
+    1000,
+    Math.ceil(Math.max(...MILESTONES.map((m) => m.amount)) / 200) * 200,
+  );
 
   const innerW = VIEWBOX_W - PADDING.left - PADDING.right;
   const innerH = height - PADDING.top - PADDING.bottom;
@@ -62,7 +65,7 @@ export function FundingMilestoneChart({
   const labeledMilestones = variant === 'full'
     ? MILESTONES
     : MILESTONES.filter((m) =>
-        [2012, 2015, 2020, 2024].includes(m.year),
+        [2012, 2015, 2020, 2025].includes(m.year),
       );
 
   return (
@@ -70,7 +73,7 @@ export function FundingMilestoneChart({
       <svg
         viewBox={`0 0 ${VIEWBOX_W} ${height}`}
         role="img"
-        aria-label="Cumulative crowdfunding raised by Star Citizen, 2012 to 2024"
+        aria-label={`Cumulative crowdfunding raised by Star Citizen, ${MILESTONES[0].year} to ${MILESTONES[MILESTONES.length - 1].year}`}
         className="w-full text-silver"
       >
         <defs>
@@ -134,7 +137,7 @@ export function FundingMilestoneChart({
               fontSize="11"
               fill="currentColor"
               fillOpacity={variant === 'full' ? 0.6 : (
-                [2012, 2016, 2020, 2024].includes(m.year) ? 0.7 : 0
+                [2012, 2016, 2020, 2025].includes(m.year) ? 0.7 : 0
               )}
               className="font-sans"
             >
@@ -212,8 +215,17 @@ export function FundingMilestoneChart({
       {variant === 'full' && (
         <figcaption className="mt-4 text-xs text-muted">
           Cumulative crowdfunding raised. Outside investment from Calder
-          Partners (2018) is not included in these totals. Figures rounded for
-          clarity.
+          Partners (2018) is not included in these totals. Current totals
+          sourced from{' '}
+          <a
+            href="https://ccugame.app/statistics/funding-dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-silver"
+          >
+            ccugame.app
+          </a>
+          . Figures rounded for clarity.
         </figcaption>
       )}
     </figure>
