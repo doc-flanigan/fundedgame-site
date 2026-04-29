@@ -4,8 +4,16 @@
 Informational funnel site targeting people searching "most funded game ever"
 or "highest crowdfunded game." Star Citizen owns this search niche — it holds
 the world record. This site tells that story compellingly, sparks curiosity
-about what the game actually is, and funnels cold traffic to o7citizen.com.
+about what the game actually is, and funnels cold traffic to dayonecitizen.com.
 This is a top-of-funnel awareness play, not a high-direct-conversion site.
+
+## Quick Reference
+```
+Referral code:  STAR-GCQJ-N6NC
+Enlist URL:     https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
+Hub:            https://dayonecitizen.com
+Conventions:    E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+```
 
 ## Agentic Build Instructions
 Incremental agents. Confirm each before proceeding.
@@ -28,7 +36,7 @@ Incremental agents. Confirm each before proceeding.
   (use SVG/CSS chart, no external chart library required)
 - StatCard.tsx: large number + label (e.g., "$700M+ Raised", "3M+ Backers")
 - CTAButton.tsx: "Discover Star Citizen — Get 50,000 UEC Free"
-- SecondaryButton.tsx → o7citizen.com
+- SecondaryButton.tsx → dayonecitizen.com
 - Footer.tsx
 
 ### Agent 3 — Homepage (/)
@@ -45,7 +53,7 @@ Incremental agents. Confirm each before proceeding.
     * "Why Do People Keep Backing It?" — community, vision, scope
     * "How Do You Get Started?" — free fly, starter pack, referral code
     * CTAButton + SecondaryButton
-    * "Learn the Basics" → o7citizen.com
+    * "Learn the Basics" → dayonecitizen.com
   - Footer
   Confirm renders.
 
@@ -59,8 +67,14 @@ Incremental agents. Confirm each before proceeding.
   - Sitemap, robots, OG meta
   - npm run build passes
 
-## Referral URL: https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-## Hub Link: https://o7citizen.com
-## Color Palette: crimson #1a0a0a, silver #c0c8d0, red #cc2200
-## Footer: Standard three-section
-## Commit Convention: feat/fix/seo/docs: [description]
+## Color Palette
+  --crimson: #1a0a0a
+  --crimson-mid: #261010
+  --silver: #c0c8d0
+  --silver-bright: #e8eef4
+  --red: #cc2200
+  --muted: #7a8088
+
+## Network Conventions
+See `E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md` for footer spec,
+tone rules, commit convention, tech stack, and agentic build pattern.
