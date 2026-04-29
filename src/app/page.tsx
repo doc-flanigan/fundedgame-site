@@ -11,16 +11,15 @@ export default function HomePage() {
   return (
     <main className="relative">
       {/* HERO */}
-      <HeroCarousel className="min-h-[80vh]">
+      <HeroCarousel className="md:min-h-[80vh]">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-red/40 bg-crimsonMid/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-silver/90 backdrop-blur-sm sm:px-4 sm:text-xs sm:tracking-[0.25em]">
             <span className="h-1.5 w-1.5 rounded-full bg-red" />
             Crowdfunding world record · 2024
           </div>
-          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-silverBright drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] sm:text-5xl md:text-7xl lg:text-8xl">
-            The Most Funded
-            <br />
-            <span className="bg-gradient-to-r from-silverBright via-red to-silverBright bg-clip-text text-transparent">
+          <h1 className="mt-5 font-display text-[2rem] font-semibold leading-[1.05] tracking-tight text-silverBright drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] sm:mt-6 sm:text-5xl md:text-7xl lg:text-8xl">
+            <span className="block">The Most Funded</span>
+            <span className="block bg-gradient-to-r from-silverBright via-red to-silverBright bg-clip-text text-transparent">
               Game Ever Made
             </span>
           </h1>

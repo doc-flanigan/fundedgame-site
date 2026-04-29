@@ -30,14 +30,14 @@ export function HeroCarousel({ className = '', children }: HeroCarouselProps) {
 
   return (
     <section
-      className={`relative isolate flex w-full flex-col items-center justify-center overflow-hidden py-20 sm:py-24 md:py-28 ${className}`}
+      className={`relative isolate flex w-full flex-col items-center overflow-hidden pb-24 pt-16 sm:pt-20 md:justify-center md:py-28 ${className}`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-roledescription="carousel"
       aria-label="Star Citizen scenes"
     >
       {/* Background slides — fill the entire section */}
-      <div aria-hidden className="absolute inset-0 -z-10">
+      <div aria-hidden className="absolute inset-0 z-0">
         {SLIDES.map((slide, i) => (
           <div
             key={slide.src}
