@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Cormorant_Garamond } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const sans = Inter({
@@ -61,6 +62,7 @@ export default function RootLayout({
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
       <body className="grain min-h-screen bg-crimson text-silverBright antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
