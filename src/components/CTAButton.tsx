@@ -1,8 +1,7 @@
+'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
-const REFERRAL_URL =
-  process.env.NEXT_PUBLIC_REFERRAL_URL ??
-  'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC';
+import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rotator';
 
 type CTAButtonProps = {
   children?: React.ReactNode;
@@ -13,9 +12,12 @@ export function CTAButton({
   children = 'Discover Star Citizen — Get 50,000 UEC Free',
   className = '',
 }: CTAButtonProps) {
+  const [href, setHref] = useState(FALLBACK_REFERRAL_URL);
+  useEffect(() => { setHref(getRotatedReferralUrl()); }, []);
+
   return (
     <Link
-      href={REFERRAL_URL}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={`group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-red px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-silverBright shadow-[0_0_40px_-10px_rgba(204,34,0,0.6)] transition-all hover:shadow-[0_0_60px_-5px_rgba(204,34,0,0.9)] md:px-10 md:py-5 md:text-base ${className}`}
