@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const HUB_URL = process.env.NEXT_PUBLIC_HUB_URL ?? 'https://o7citizen.com';
+const HUB_URL = process.env.NEXT_PUBLIC_HUB_URL ?? 'https://dayonecitizen.com';
 
 type SecondaryButtonProps = {
   children?: React.ReactNode;
@@ -9,7 +9,7 @@ type SecondaryButtonProps = {
 };
 
 export function SecondaryButton({
-  children = 'Learn the basics at o7citizen.com',
+  children = 'Learn the basics at dayonecitizen.com',
   href = HUB_URL,
   className = '',
 }: SecondaryButtonProps) {

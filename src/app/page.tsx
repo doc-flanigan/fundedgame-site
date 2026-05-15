@@ -245,12 +245,12 @@ export default function HomePage() {
             Learn the basics in plain English.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
-            o7citizen.com is the friendly hub of the network — built for
+            dayonecitizen.com is the friendly hub of the network — built for
             anyone who&rsquo;s curious about Star Citizen but tired of dense
             wiki pages, jargon, and forum gatekeeping.
           </p>
           <div className="mt-8">
-            <SecondaryButton>Visit o7citizen.com →</SecondaryButton>
+            <SecondaryButton>Visit dayonecitizen.com →</SecondaryButton>
           </div>
         </div>
       </section>

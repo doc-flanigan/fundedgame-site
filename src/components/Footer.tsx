@@ -22,12 +22,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-silver">
               <li>
                 <Link
-                  href="https://o7citizen.com"
+                  href="https://dayonecitizen.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-silverBright"
                 >
-                  o7citizen.com — Hub
+                  dayonecitizen.com — Hub
                 </Link>
               </li>
               <li>
