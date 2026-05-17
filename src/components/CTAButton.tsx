@@ -6,14 +6,31 @@ import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rot
 type CTAButtonProps = {
   children?: React.ReactNode;
   className?: string;
+  trackingLabel?: string;
 };
 
 export function CTAButton({
   children = 'Discover Star Citizen — Get 50,000 UEC Free',
   className = '',
+  trackingLabel,
 }: CTAButtonProps) {
   const [href, setHref] = useState(FALLBACK_REFERRAL_URL);
   useEffect(() => { setHref(getRotatedReferralUrl()); }, []);
+
+  const handleClick = () => {
+    const code = href.split('referral=')[1] ?? ''
+    fetch('/api/track-click', {
+      method: 'POST',
+      keepalive: true,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        label: trackingLabel ?? 'unknown',
+        referralCode: code,
+        page: window.location.pathname,
+        site: window.location.hostname,
+      }),
+    }).catch(() => {})
+  }
 
   return (
     <Link
@@ -21,6 +38,7 @@ export function CTAButton({
       target="_blank"
       rel="noopener noreferrer"
       className={`group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-red px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-silverBright shadow-[0_0_40px_-10px_rgba(204,34,0,0.6)] transition-all hover:shadow-[0_0_60px_-5px_rgba(204,34,0,0.9)] md:px-10 md:py-5 md:text-base ${className}`}
+      onClick={handleClick}
     >
       <span
         aria-hidden
