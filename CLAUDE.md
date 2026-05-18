@@ -97,3 +97,25 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 - [ ] Click CTA **with** adblocker enabled → Sheet row appears within 5s
 - [ ] Click CTA **with** adblocker enabled → Discord embed appears in #referral-clicks
 - [ ] Click CTA **without** adblocker → same as above
+
+---
+
+## SEO
+
+**Network role:** Story/awareness top-of-funnel satellite
+**Search engine:** Both
+
+**Primary keywords:**
+- "highest funded game ever"
+- "most crowdfunded game"
+- "most funded game"
+- "star citizen crowdfunding record"
+
+**Cross-links this site must send (body copy only):**
+- → dayonecitizen.com: "Start playing — Day One guide for new players" CTA
+- → freeflyevent.com: "Try it free during a Free Fly event first"
+
+**Do not:**
+- Place cross-portfolio links in footers or link lists — editorial/body copy only
+
+**Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
