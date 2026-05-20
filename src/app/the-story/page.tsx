@@ -7,14 +7,14 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { MILESTONES } from '@/data/milestones';
 
 export const metadata: Metadata = {
-  title: 'The Story — How Star Citizen Became the Most Funded Game in History',
+  title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
   description:
-    'From a 2012 Kickstarter asking for $500,000 to nearly $1 billion raised — the full story of Star Citizen, the largest crowdfunded project in human history.',
+    'Star Citizen asked for $500,000 in 2012. By 2026 it had raised $967M from 6.4 million backers. The complete year-by-year crowdfunding story.',
   alternates: { canonical: '/the-story' },
   openGraph: {
-    title: 'How Star Citizen Became the Most Funded Game in History',
+    title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
     description:
-      'From a $500,000 ask to nearly $1B raised. The full story of the largest crowdfunding campaign ever.',
+      'From a $500K Kickstarter to $967M raised. The complete year-by-year story of the most crowdfunded project in history.',
     images: ['/images/hero/hero-04.jpg'],
   },
 };
