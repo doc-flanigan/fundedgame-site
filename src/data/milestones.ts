@@ -7,7 +7,7 @@ export type Milestone = {
 
 /**
  * Cumulative crowdfunding totals for Star Citizen across the years.
- * Current totals (April 2026) sourced from ccugame.app/statistics/funding-dashboard.
+ * Current totals (April 2026) sourced from https://robertsspaceindustries.com/en/funding-goals.
  * Earlier years are publicly reported RSI funding figures, rounded for visual clarity.
  */
 export const MILESTONES: Milestone[] = [

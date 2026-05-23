@@ -218,12 +218,12 @@ export function FundingMilestoneChart({
           Partners (2018) is not included in these totals. Current totals
           sourced from{' '}
           <a
-            href="https://ccugame.app/statistics/funding-dashboard"
+            href="https://robertsspaceindustries.com/en/funding-goals"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-silver"
           >
-            ccugame.app
+            Roberts Space Industries
           </a>
           . Figures rounded for clarity.
         </figcaption>

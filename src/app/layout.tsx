@@ -19,11 +19,33 @@ const display = Cormorant_Garamond({
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://highestfundedgame.com';
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://highestfundedgame.com/#website',
+      url: 'https://highestfundedgame.com',
+      name: 'Highest Funded Game',
+      description:
+        'Star Citizen is the highest-funded crowdfunding project in history, having raised over $700M from its passionate community.',
+      publisher: { '@id': 'https://highestfundedgame.com/#organization' },
+    },
+    {
+      '@type': 'Organization',
+      '@id': 'https://highestfundedgame.com/#organization',
+      name: 'Highest Funded Game',
+      url: 'https://highestfundedgame.com',
+      sameAs: ['https://dayonecitizen.com'],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'Star Citizen Has Raised $967M+ — The Highest-Funded Game in History',
+      'Star Citizen — The Highest-Funded Game in History',
     template: '%s · highestfundedgame.com',
   },
   description:
@@ -60,6 +82,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="grain min-h-screen bg-crimson text-silverBright antialiased">
         {children}
         <Analytics />

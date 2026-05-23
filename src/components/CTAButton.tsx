@@ -36,7 +36,7 @@ export function CTAButton({
     <Link
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer sponsored"
       className={`group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-red px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-silverBright shadow-[0_0_40px_-10px_rgba(204,34,0,0.6)] transition-all hover:shadow-[0_0_60px_-5px_rgba(204,34,0,0.9)] md:px-10 md:py-5 md:text-base ${className}`}
       onClick={handleClick}
     >

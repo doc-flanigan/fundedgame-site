@@ -264,7 +264,7 @@ export default function StoryPage() {
             starter pack and join the persistent universe today.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
-            <CTAButton />
+            <CTAButton trackingLabel="story-page-cta" />
             <SecondaryButton />
           </div>
         </div>

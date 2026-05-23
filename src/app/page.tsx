@@ -33,7 +33,7 @@ export default function HomePage() {
             <em>Star Citizen</em>.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
-            <CTAButton />
+            <CTAButton trackingLabel="homepage-cta-top" />
             <SecondaryButton href="#numbers">
               Show me the numbers
             </SecondaryButton>
@@ -229,7 +229,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-14 flex flex-col items-center justify-center gap-4 md:flex-row">
-            <CTAButton />
+            <CTAButton trackingLabel="homepage-cta-bottom" />
             <SecondaryButton />
           </div>
         </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
             wiki pages, jargon, and forum gatekeeping.
           </p>
 
-          {/* SEO cross-links: dayonecitizen + freeflyevent */}
+          {/* SEO cross-link: dayonecitizen */}
           <div className="mt-8 space-y-3 text-sm text-center">
             <p className="text-silver">
               Ready to play the most funded game in history?{' '}
@@ -263,18 +263,6 @@ export default function HomePage() {
                 Start with the Day One guide
               </a>{' '}
               — written for players who have never launched a ship.
-            </p>
-            <p className="text-silver">
-              Not sure yet?{' '}
-              <a
-                href="https://freeflyevent.com"
-                className="text-red underline hover:opacity-80"
-                target="_blank"
-                rel="noopener"
-              >
-                Free Fly events
-              </a>{' '}
-              let you try Star Citizen at no cost for a limited time.
             </p>
           </div>
 
