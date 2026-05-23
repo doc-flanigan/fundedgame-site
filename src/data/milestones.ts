@@ -25,6 +25,7 @@ export const MILESTONES: Milestone[] = [
   { year: 2023, amount: 600, label: '$600M', note: 'Pyro system reveal energizes the community.' },
   { year: 2024, amount: 700, label: '$700M crossed', note: 'Star Citizen surpasses $700M — no other crowdfunded project comes close.' },
   { year: 2025, amount: 855, label: 'Closing on a billion', note: 'Backers add another $155M in a single year, pushing cumulative funding past $850M.' },
+  { year: 2026, amount: 967, label: '$967M (April 2026)', note: 'Closing on $1B. No other crowdfunded project in any category comes close.' },
 ];
 
 export const HEADLINE_STATS = [
