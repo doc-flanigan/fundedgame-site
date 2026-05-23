@@ -17,6 +17,12 @@ export const metadata: Metadata = {
       'From a $500K Kickstarter to $967M raised. The complete year-by-year story of the most crowdfunded project in history.',
     images: ['/images/hero/hero-04.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
+    description:
+      'From a $500K Kickstarter to $967M raised. The complete year-by-year story of the most crowdfunded project in history.',
+  },
 };
 
 export default function StoryPage() {

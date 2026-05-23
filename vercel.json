@@ -5,7 +5,20 @@
   "devCommand": "next dev",
   "installCommand": "npm install",
   "outputDirectory": ".next",
-  "redirects": [],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "mostfundedgame.com" }],
+      "destination": "https://highestfundedgame.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.mostfundedgame.com" }],
+      "destination": "https://highestfundedgame.com/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
