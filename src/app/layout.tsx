@@ -28,7 +28,7 @@ const jsonLd = {
       url: 'https://highestfundedgame.com',
       name: 'Highest Funded Game',
       description:
-        'Star Citizen is the highest-funded crowdfunding project in history, having raised over $700M from its passionate community.',
+        'Star Citizen is the highest-funded crowdfunding project in history, having raised over $1 billion from its passionate community.',
       publisher: { '@id': 'https://highestfundedgame.com/#organization' },
     },
     {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     template: '%s · highestfundedgame.com',
   },
   description:
-    'Star Citizen has raised nearly $1 billion from 6.4 million backers — making it the most crowdfunded project in history. See the full funding record, year by year.',
+    'Star Citizen crossed $1 billion raised on May 24, 2026 — making it the most crowdfunded project in history. See the full funding record, year by year.',
   alternates: {
     canonical: '/',
   },
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'highestfundedgame.com',
     title:
-      'Star Citizen Has Raised $967M+ — The Highest-Funded Game in History',
+      'Star Citizen Just Crossed $1 Billion — The Highest-Funded Game in History',
     description:
-      '$967M raised. 6.4M backers. No other crowdfunded project — game or otherwise — comes close. Here is the record.',
+      '$1 billion raised. 6.5M backers. No other crowdfunded project — game or otherwise — comes close. Here is the record.',
     images: ['/images/hero/hero-01.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Star Citizen: $967M+ Raised — The Highest-Funded Game Ever',
+    title: 'Star Citizen: $1 Billion Raised — The Most Funded Game Ever',
     description:
-      'Star Citizen has raised nearly $1 billion from 6.4 million backers. The full crowdfunding record, year by year.',
+      'Star Citizen crossed $1 billion raised on May 24, 2026. The full crowdfunding record, year by year.',
     images: ['/images/hero/hero-01.jpg'],
   },
   robots: {
