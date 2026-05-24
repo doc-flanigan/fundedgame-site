@@ -7,21 +7,21 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { MILESTONES } from '@/data/milestones';
 
 export const metadata: Metadata = {
-  title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
+  title: 'How Star Citizen Raised $1 Billion — The Full Crowdfunding Story',
   description:
-    'Star Citizen asked for $500,000 in 2012. By 2026 it had raised $967M from 6.4 million backers. The complete year-by-year crowdfunding story.',
+    'Star Citizen asked for $500,000 in 2012. On May 24, 2026, it crossed $1 billion raised from 6.5 million backers. The complete year-by-year crowdfunding story.',
   alternates: { canonical: '/the-story' },
   openGraph: {
-    title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
+    title: 'How Star Citizen Raised $1 Billion — The Full Crowdfunding Story',
     description:
-      'From a $500K Kickstarter to $967M raised. The complete year-by-year story of the most crowdfunded project in history.',
+      'From a $500K Kickstarter to $1 billion raised. The complete year-by-year story of the most crowdfunded project in history.',
     images: ['/images/hero/hero-04.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Star Citizen Raised $967M — The Full Crowdfunding Story',
+    title: 'How Star Citizen Raised $1 Billion — The Full Crowdfunding Story',
     description:
-      'From a $500K Kickstarter to $967M raised. The complete year-by-year story of the most crowdfunded project in history.',
+      'From a $500K Kickstarter to $1 billion raised. The complete year-by-year story of the most crowdfunded project in history.',
   },
 };
 
@@ -56,7 +56,7 @@ export default function StoryPage() {
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
             In October 2012, a former game designer named Chris Roberts asked
             the internet for half a million dollars. Fourteen years later,
-            more than 6.4 million people have contributed nearly a billion
+            more than 6.5 million people have contributed over one billion
             dollars to the project he was pitching — outpacing every other
             crowdfunded campaign on record by a margin that almost looks like
             a typo.
@@ -182,28 +182,28 @@ export default function StoryPage() {
         </p>
       </Chapter>
 
-      {/* NARRATIVE — Most funded ever */}
+      {/* NARRATIVE — One Billion */}
       <Chapter
-        eyebrow="2023 — Today"
-        title="The most funded project in human history."
+        eyebrow="2023 — 2026"
+        title="One billion dollars."
       >
         <p>
           In 2023, RSI announced the Pyro star system, the project&rsquo;s
           first major addition outside Stanton. The reveal kicked off another
           wave of pledges. By 2024, Star Citizen had crossed $700 million in
-          total crowdfunding. By April 2026, that number stood at over $967
-          million from more than 6.4 million backers — within striking
-          distance of an even rarer milestone: a single crowdfunded project
-          crossing $1 billion.
+          total crowdfunding. By early 2026, that number stood past $967
+          million — and the community knew what was coming.
         </p>
         <p>
-          To put that in perspective: the next-closest video game on the
-          all-time crowdfunding leaderboard sits roughly an order of
-          magnitude lower. Outside of gaming, the largest crowdfunded
-          campaigns of any kind — gadgets, fashion, films — also fall well
-          short. Star Citizen isn&rsquo;t just the most funded game ever made;
-          it&rsquo;s the most funded crowdfunded project of any kind, full
-          stop.
+          On May 24, 2026, it happened. The Anvil Odin — the largest ship
+          ever conceived for Star Citizen, and the last concept ship CIG ever
+          announced — sold enough units to push the cumulative total past
+          $1,000,000,000. No other crowdfunded project in any category, game
+          or otherwise, has reached that number. Star Citizen isn&rsquo;t
+          just the most funded game ever made; it&rsquo;s the most funded
+          crowdfunded project of any kind, full stop, and now by a margin
+          that crosses a threshold most people assumed no crowdfunding
+          campaign would ever reach.
         </p>
         <p>
           The game is still in development. The promise — a single, seamless,
