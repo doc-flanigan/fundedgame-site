@@ -72,7 +72,7 @@ export default function BillionPage() {
             <br />
             one billion dollars.
           </h1>
-          <div className="mt-8 font-display text-[4rem] font-semibold leading-none tracking-tight text-silverBright drop-shadow-[0_2px_40px_rgba(204,34,0,0.4)] md:text-[6rem] lg:text-[8rem]">
+          <div className="mt-8 font-display text-[2.25rem] font-semibold leading-none tracking-tight text-silverBright drop-shadow-[0_2px_40px_rgba(204,34,0,0.4)] sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
             <BillionCounter target={LIVE_TOTAL} duration={2200} />
           </div>
           <p className="mt-6 text-base text-silver md:text-lg">

@@ -48,7 +48,7 @@ export default function HomePage() {
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-red" />
             May 24, 2026 — It happened
           </div>
-          <div className="mt-6 font-display text-6xl font-semibold leading-none tracking-tight text-silverBright md:text-8xl lg:text-[9rem]">
+          <div className="mt-6 font-display text-[2rem] font-semibold leading-none tracking-tight text-silverBright sm:text-5xl md:text-8xl lg:text-[9rem]">
             $1,000,000,000
           </div>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-silver md:text-lg">
