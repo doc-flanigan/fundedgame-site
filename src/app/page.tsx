@@ -25,9 +25,9 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
-            Nearly <strong className="text-silverBright">$1 billion</strong>{' '}
+            Over <strong className="text-silverBright">$1 billion</strong>{' '}
             raised from more than{' '}
-            <strong className="text-silverBright">6 million backers</strong>.
+            <strong className="text-silverBright">6.5 million backers</strong>.
             One ambitious space sim that quietly broke every crowdfunding
             record in human history. This is the story of{' '}
             <em>Star Citizen</em>.
@@ -40,6 +40,31 @@ export default function HomePage() {
           </div>
         </div>
       </HeroCarousel>
+
+      {/* $1B MILESTONE CALLOUT */}
+      <section className="relative border-b border-red/20 bg-crimson px-6 py-16 text-center">
+        <div className="mx-auto max-w-3xl">
+          <div className="inline-flex items-center gap-2 rounded-full border border-red/40 bg-red/10 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-red">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-red" />
+            May 24, 2026 — It happened
+          </div>
+          <div className="mt-6 font-display text-6xl font-semibold leading-none tracking-tight text-silverBright md:text-8xl lg:text-[9rem]">
+            $1,000,000,000
+          </div>
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-silver md:text-lg">
+            The Anvil Odin — the largest ship in the game, and the last
+            concept ship ever announced — crossed the line. Star Citizen is
+            now the only crowdfunded project in any category to raise one
+            billion dollars.
+          </p>
+          <Link
+            href="/billion"
+            className="mt-6 inline-block text-sm text-red underline hover:opacity-80"
+          >
+            The full story of how $1 billion happened →
+          </Link>
+        </div>
+      </section>
 
       {/* BY THE NUMBERS */}
       <section
