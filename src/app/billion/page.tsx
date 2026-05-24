@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd';
 import { BillionCounter } from '@/components/BillionCounter';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
@@ -50,6 +51,12 @@ const COMPARISON_STATS = [
 export default function BillionPage() {
   return (
     <main className="relative">
+      <BreadcrumbsJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: '$1 Billion Milestone', url: '/billion' },
+        ]}
+      />
       {/* HERO — THE NUMBER */}
       <section className="relative overflow-hidden border-b border-red/10 bg-crimson px-6 pb-28 pt-24 text-center md:pt-36">
         <div

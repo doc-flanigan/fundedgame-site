@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
 import { FundingMilestoneChart } from '@/components/FundingMilestoneChart';
@@ -28,6 +29,12 @@ export const metadata: Metadata = {
 export default function StoryPage() {
   return (
     <main className="relative">
+      <BreadcrumbsJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'The Story', url: '/the-story' },
+        ]}
+      />
       {/* HEADER STRIP */}
       <header className="relative overflow-hidden border-b border-red/10 bg-crimson-radial px-6 pb-20 pt-28 md:pt-36">
         <div className="absolute inset-0 -z-10 opacity-30">
