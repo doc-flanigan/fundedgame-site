@@ -25,17 +25,17 @@ export const MILESTONES: Milestone[] = [
   { year: 2023, amount: 600, label: '$600M', note: 'Pyro system reveal energizes the community.' },
   { year: 2024, amount: 700, label: '$700M crossed', note: 'Star Citizen surpasses $700M — no other crowdfunded project comes close.' },
   { year: 2025, amount: 855, label: 'Closing on a billion', note: 'Backers add another $155M in a single year, pushing cumulative funding past $850M.' },
-  { year: 2026, amount: 967, label: '$967M (April 2026)', note: 'Closing on $1B. No other crowdfunded project in any category comes close.' },
+  { year: 2026, amount: 1000, label: '$1 Billion Crossed', note: 'On May 24, 2026, the Anvil Odin — the largest ship in the game and the last concept ship ever announced — pushed Star Citizen past one billion dollars raised. The first crowdfunded project of any kind to reach this milestone.' },
 ];
 
 export const HEADLINE_STATS = [
   {
-    value: '$967M+',
+    value: '$1B+',
     label: 'Raised from backers',
-    sub: 'Live total as of April 2026 — closing on $1 billion',
+    sub: 'Crossed $1,000,000,000 on May 24, 2026',
   },
   {
-    value: '6.4M+',
+    value: '6.5M+',
     label: 'Individual backers',
     sub: 'More than the population of Denmark',
   },
@@ -47,6 +47,6 @@ export const HEADLINE_STATS = [
   {
     value: '#1',
     label: 'Crowdfunded project ever',
-    sub: 'No other campaign in any category is close',
+    sub: 'By a margin that almost looks like a typo',
   },
 ];
