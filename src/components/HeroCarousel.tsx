@@ -46,7 +46,7 @@ export function HeroCarousel({ className = '', children }: HeroCarouselProps) {
       aria-roledescription="carousel"
       aria-label="Star Citizen scenes"
     >
-      <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
+      <div className="relative w-full min-h-[520px] md:min-h-0 md:aspect-[21/9]">
         {SLIDES.map((slide, i) => (
           <div
             key={slide.src}
