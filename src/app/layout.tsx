@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Cormorant_Garamond } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@/components/CookieBanner';
 import './globals.css';
 
 const sans = Inter({
@@ -91,6 +93,8 @@ export default function RootLayout({
       <body className="grain min-h-screen bg-crimson text-silverBright antialiased">
         {children}
         <Analytics />
+        <GoogleAnalytics />
+        <CookieBanner />
       </body>
     </html>
   );
