@@ -1,0 +1,22 @@
+# Highest Funded Game
+
+> Plain-English fan site telling the story of how Star Citizen became the highest-funded game in history — crossing $1 billion raised on May 24, 2026 from more than 6.5 million backers. Covers the year-by-year crowdfunding record from its 2012 Kickstarter to today. Not affiliated with or endorsed by Cloud Imperium Games or Roberts Space Industries.
+
+## Pages
+
+- [Overview](https://highestfundedgame.com/): What makes Star Citizen the most crowdfunded project in history, with the headline numbers.
+- [The Full Crowdfunding Story](https://highestfundedgame.com/the-story): The complete year-by-year story, from a $500K Kickstarter in 2012 to $1 billion raised.
+- [The $1 Billion Milestone](https://highestfundedgame.com/billion): The May 24, 2026 milestone — how Star Citizen crossed one billion dollars raised.
+
+## Key facts
+
+- Star Citizen crossed $1 billion raised on May 24, 2026, making it the most crowdfunded project in history.
+- Its funding comes from more than 6.5 million backers.
+- The project began with a Kickstarter in 2012 that originally sought $500,000.
+- Star Citizen is developed by Cloud Imperium Games; this is an independent fan site, not an official source.
+
+## Related
+
+- [dayonecitizen.com](https://dayonecitizen.com): Plain-English getting-started guide for brand-new Star Citizen players.
+- [freeflyevent.com](https://freeflyevent.com): Star Citizen Free Fly event tracker — how to try the game for free.
+- [iheldtheline.com](https://iheldtheline.com): Squadron 42 release-date tracking, developer news, and FAQ.
