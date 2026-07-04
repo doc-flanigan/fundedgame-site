@@ -4,6 +4,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
 import { FundingMilestoneChart } from '@/components/FundingMilestoneChart';
+import { PageSources } from '@/components/PageSources';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { MILESTONES } from '@/data/milestones';
 
@@ -276,6 +277,8 @@ export default function StoryPage() {
           </div>
         </div>
       </section>
+
+      <PageSources route="/the-story" />
 
       <Footer />
     </main>

@@ -5,6 +5,7 @@ import { BillionCounter } from '@/components/BillionCounter';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
 import { FundingMilestoneChart } from '@/components/FundingMilestoneChart';
+import { PageSources } from '@/components/PageSources';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { StatCard } from '@/components/StatCard';
 
@@ -211,6 +212,8 @@ export default function BillionPage() {
           </div>
         </div>
       </section>
+
+      <PageSources route="/billion" />
 
       <Footer />
     </main>

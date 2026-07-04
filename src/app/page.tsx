@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
+import { PageSources } from '@/components/PageSources';
 import { FundingMilestoneChart } from '@/components/FundingMilestoneChart';
 import { HeroCarousel } from '@/components/HeroCarousel';
 import { SecondaryButton } from '@/components/SecondaryButton';
@@ -296,6 +297,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <PageSources route="/" />
 
       <Footer />
     </main>
