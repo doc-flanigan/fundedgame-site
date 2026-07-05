@@ -31,6 +31,21 @@ export const metadata: Metadata = {
 const LIVE_TOTAL = 1_000_012_999;
 const LIVE_BACKERS = 6_543_109;
 
+const FAQS = [
+  {
+    q: 'When did Star Citizen hit $1 billion?',
+    a: 'May 24, 2026. The official RSI funding tracker crossed one billion dollars raised, contributed by more than 6.5 million backer accounts over fourteen years of crowdfunding.',
+  },
+  {
+    q: 'What pushed Star Citizen over $1 billion?',
+    a: 'The concept sale of the Anvil Odin — the largest ship in the game and the last concept ship CIG announced — was running as the tracker crossed the line.',
+  },
+  {
+    q: 'Was Star Citizen the first crowdfunded project to reach $1 billion?',
+    a: 'Yes — it is the first crowdfunded project of any kind to reach the billion-dollar milestone. No other crowdfunded campaign comes close to its total.',
+  },
+];
+
 const COMPARISON_STATS = [
   {
     value: '$1B+',
@@ -209,6 +224,43 @@ export default function BillionPage() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
             <CTAButton trackingLabel="billion-page-cta" />
             <SecondaryButton />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="relative border-t border-red/10 px-6 py-24 md:py-28">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: FAQS.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }),
+          }}
+        />
+        <div className="mx-auto max-w-3xl">
+          <div className="text-xs uppercase tracking-[0.3em] text-red">
+            Quick answers
+          </div>
+          <h2 className="mt-3 font-display text-4xl text-silverBright md:text-5xl">
+            The milestone, in three questions.
+          </h2>
+          <div className="mt-10 space-y-6">
+            {FAQS.map((f) => (
+              <div
+                key={f.q}
+                className="rounded-2xl border border-red/15 bg-crimsonMid/30 p-6"
+              >
+                <h3 className="font-display text-lg text-silverBright">{f.q}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-silver">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -4,11 +4,35 @@
   "routes": {
     "/": [
       {
+        "id": "crowdfunding-launch-vs-alpha-start",
+        "claim": "The Star Citizen crowdfunding campaign launched October 2012, but public alpha testing did not begin until later (Hangar Module 2013, Arena Commander 2014) — 'in open development since 2012' is accurate, 'in public alpha since 2012' is not.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
+        ]
+      },
+      {
         "id": "funding-one-billion-may-2026",
         "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/funding-goals"
+        ]
+      },
+      {
+        "id": "sq42-launch-window-2026",
+        "claim": "CIG announced a 2026 launch window for Squadron 42 at CitizenCon 2954 (October 2024).",
+        "status": "verified",
+        "sources": [
+          "https://www.gamespress.com/en-US/Cloud-Imperium-Games-Reveals-Over-an-Hour-of-Star-Studded-Space-Advent"
+        ]
+      },
+      {
+        "id": "sq42-separate-title-no-live-sp-mode",
+        "claim": "Squadron 42 is a separate, not-yet-released single-player title; the live Star Citizen PU has no dedicated single-player campaign mode.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
         ]
       }
     ],
@@ -24,11 +48,28 @@
     ],
     "/the-story": [
       {
+        "id": "crowdfunding-launch-vs-alpha-start",
+        "claim": "The Star Citizen crowdfunding campaign launched October 2012, but public alpha testing did not begin until later (Hangar Module 2013, Arena Commander 2014) — 'in open development since 2012' is accurate, 'in public alpha since 2012' is not.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
+        ]
+      },
+      {
         "id": "funding-one-billion-may-2026",
         "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/funding-goals"
+        ]
+      },
+      {
+        "id": "sq42-announced-oct-2012",
+        "claim": "Squadron 42 was announced together with Star Citizen by Chris Roberts at GDC Online in Austin on October 10, 2012, as the campaign's Wing Commander-style single-player component.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts",
+          "https://www.kickstarter.com/projects/cig/star-citizen"
         ]
       }
     ]

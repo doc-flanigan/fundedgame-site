@@ -8,6 +8,21 @@ import { PageSources } from '@/components/PageSources';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { MILESTONES } from '@/data/milestones';
 
+const FAQS = [
+  {
+    q: "How did Star Citizen's crowdfunding start?",
+    a: 'In October 2012, Chris Roberts announced Star Citizen and its single-player campaign Squadron 42 at GDC Online in Austin, asking for $500,000 across a Kickstarter campaign and the new RSI site. Backer demand crashed the site within days.',
+  },
+  {
+    q: 'How long has Star Citizen been in development?',
+    a: 'The game has been in open development since October 2012 — fourteen years of continuous crowdfunding, with public alpha testing beginning in 2014.',
+  },
+  {
+    q: 'How many backers does Star Citizen have?',
+    a: 'More than 6.5 million backer accounts, per the official RSI funding tracker — the same tracker that crossed $1 billion raised on May 24, 2026.',
+  },
+];
+
 export const metadata: Metadata = {
   title: 'How Star Citizen Raised $1 Billion — The Full Crowdfunding Story',
   description:
@@ -274,6 +289,43 @@ export default function StoryPage() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
             <CTAButton trackingLabel="story-page-cta" />
             <SecondaryButton />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="relative border-t border-red/10 px-6 py-24 md:py-28">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: FAQS.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }),
+          }}
+        />
+        <div className="mx-auto max-w-3xl">
+          <div className="text-xs uppercase tracking-[0.3em] text-red">
+            Quick answers
+          </div>
+          <h2 className="mt-3 font-display text-4xl text-silverBright md:text-5xl">
+            The story, in three questions.
+          </h2>
+          <div className="mt-10 space-y-6">
+            {FAQS.map((f) => (
+              <div
+                key={f.q}
+                className="rounded-2xl border border-red/15 bg-crimsonMid/30 p-6"
+              >
+                <h3 className="font-display text-lg text-silverBright">{f.q}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-silver">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

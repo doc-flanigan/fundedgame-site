@@ -8,6 +8,25 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { StatCard } from '@/components/StatCard';
 import { HEADLINE_STATS } from '@/data/milestones';
 
+const FAQS = [
+  {
+    q: 'What is the most funded game ever?',
+    a: 'Star Citizen. The space sim has raised over $1 billion from more than 6.5 million backer accounts since its 2012 Kickstarter, crossing the billion-dollar mark on May 24, 2026. No other crowdfunded project of any kind comes close.',
+  },
+  {
+    q: 'How much money has Star Citizen raised?',
+    a: 'Over $1 billion as of May 24, 2026, from more than 6.5 million backer accounts — tracked live on the official RSI funding page, which updates as new pledges arrive.',
+  },
+  {
+    q: 'How is Star Citizen funded?',
+    a: 'Entirely through crowdfunding. Players pledge for ship packages and game access on the RSI store. It started with a $500,000 Kickstarter ask by Chris Roberts in October 2012 and has continued for fourteen years.',
+  },
+  {
+    q: 'Is Star Citizen actually released?',
+    a: 'It is playable today as a live alpha — the game has been in open development since 2012. Its single-player campaign, Squadron 42, is a separate title targeting a 2026 release.',
+  },
+];
+
 export default function HomePage() {
   return (
     <main className="relative">
@@ -16,7 +35,7 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-red/40 bg-crimsonMid/60 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-silver/90 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-red" />
-            Crowdfunding world record · 2024
+            Crowdfunding world record · 2026
           </div>
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-silverBright drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] md:text-7xl lg:text-8xl">
             The Most Funded
@@ -294,6 +313,43 @@ export default function HomePage() {
 
           <div className="mt-8">
             <SecondaryButton>Visit dayonecitizen.com →</SecondaryButton>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="relative border-t border-red/10 px-6 py-24 md:py-28">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: FAQS.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }),
+          }}
+        />
+        <div className="mx-auto max-w-3xl">
+          <div className="text-xs uppercase tracking-[0.3em] text-red">
+            Quick answers
+          </div>
+          <h2 className="mt-3 font-display text-4xl text-silverBright md:text-5xl">
+            The questions everyone asks.
+          </h2>
+          <div className="mt-10 space-y-6">
+            {FAQS.map((f) => (
+              <div
+                key={f.q}
+                className="rounded-2xl border border-red/15 bg-crimsonMid/30 p-6"
+              >
+                <h3 className="font-display text-lg text-silverBright">{f.q}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-silver">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
