@@ -1,5 +1,5 @@
 ﻿'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rotator';
 
@@ -16,6 +16,43 @@ export function CTAButton({
 }: CTAButtonProps) {
   const [href, setHref] = useState(FALLBACK_REFERRAL_URL);
   useEffect(() => { setHref(getRotatedReferralUrl()); }, []);
+
+  const linkRef = useRef<HTMLAnchorElement>(null);
+  const impressionFired = useRef(false);
+
+  useEffect(() => {
+    const el = linkRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (impressionFired.current) return;
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        impressionFired.current = true;
+        observer.disconnect();
+        const code = href.split('referral=')[1] ?? ''
+        fetch('/api/log', {
+          method: 'POST',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            label: `impression:${trackingLabel ?? 'unknown'}`,
+            referralCode: code,
+            page: window.location.pathname,
+            site: window.location.hostname,
+          }),
+        }).catch(() => {})
+        ;(window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'cta_impression', {
+          cta_label: trackingLabel ?? 'unknown',
+          referral_code: code,
+          page_path: window.location.pathname,
+          site: window.location.hostname,
+        })
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [href, trackingLabel]);
 
   const handleClick = () => {
     const code = href.split('referral=')[1] ?? ''
@@ -39,6 +76,7 @@ export function CTAButton({
 
   return (
     <Link
+      ref={linkRef}
       href={href}
       target="_blank"
       rel="noopener noreferrer sponsored"
