@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTAButton } from '@/components/CTAButton';
 import { Footer } from '@/components/Footer';
@@ -7,6 +8,11 @@ import { HeroCarousel } from '@/components/HeroCarousel';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { StatCard } from '@/components/StatCard';
 import { HEADLINE_STATS } from '@/data/milestones';
+
+export const metadata: Metadata = {
+  description:
+    'Star Citizen is the most funded game ever — over $1 billion raised from 6.5 million+ backers since its 2012 Kickstarter, crossing $1B on May 24, 2026.',
+};
 
 const FAQS = [
   {
