@@ -38,10 +38,11 @@ export function Footer() {
               for clarity.
             </p>
             <p className="mt-3 text-xs leading-relaxed text-muted">
-              Affiliate disclosure: If you create a Star Citizen account using referral code STAR-GCQJ-N6NC, the site owner may receive an in-game bonus. Your 50,000 aUEC new-player bonus is not affected.
+              Affiliate disclosure: If you create a Star Citizen account using referral code STAR-GCQJ-N6NC, the site owner may receive an in-game bonus. Your 50,000 UEC new-player bonus is not affected.
             </p>
             <p className="mt-3 text-xs text-muted">
-              Built by Doc_Flanigan · o7
+              Run by Doc_Flanigan, a real Star Citizen community member — the
+              referral code is his, disclosed openly and verified monthly · o7
             </p>
             <div className="mt-4">
               <Image src="/images/made-by-community.png" alt="Made by the Star Citizen Community" width={120} height={40} />

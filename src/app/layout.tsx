@@ -30,6 +30,11 @@ const jsonLd = {
       description:
         'Star Citizen is the highest-funded crowdfunding project in history, having raised over $1 billion from its passionate community.',
       publisher: { '@id': 'https://highestfundedgame.com/#organization' },
+      author: {
+        '@type': 'Person',
+        name: 'Doc_Flanigan',
+        url: 'https://dayonecitizen.com',
+      },
     },
     {
       '@type': 'Organization',
@@ -37,6 +42,11 @@ const jsonLd = {
       name: 'Highest Funded Game',
       url: 'https://highestfundedgame.com',
       sameAs: ['https://dayonecitizen.com'],
+      founder: {
+        '@type': 'Person',
+        name: 'Doc_Flanigan',
+        url: 'https://dayonecitizen.com',
+      },
     },
   ],
 };
