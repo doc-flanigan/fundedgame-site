@@ -17,6 +17,12 @@
       "has": [{ "type": "host", "value": "www.mostfundedgame.com" }],
       "destination": "https://highestfundedgame.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "fundedgame-site.vercel.app" }],
+      "destination": "https://highestfundedgame.com/:path*",
+      "permanent": true
     }
   ],
   "headers": [
