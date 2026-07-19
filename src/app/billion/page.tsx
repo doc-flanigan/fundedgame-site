@@ -10,7 +10,7 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { StatCard } from '@/components/StatCard';
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Just Hit $1 Billion — The Most Crowdfunded Project in History',
+  title: 'Star Citizen Hits $1 Billion Crowdfunded',
   description:
     'On May 24, 2026, Star Citizen crossed one billion dollars raised from 6.5 million backers. The Anvil Odin — the largest ship in the game — pushed it over the line.',
   alternates: { canonical: '/billion' },

@@ -24,7 +24,7 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'How Star Citizen Raised $1 Billion — The Full Crowdfunding Story',
+  title: 'How Star Citizen Raised $1 Billion',
   description:
     'Star Citizen asked for $500,000 in 2012. On May 24, 2026, it crossed $1 billion raised from 6.5 million backers. The complete year-by-year crowdfunding story.',
   alternates: { canonical: '/the-story' },
