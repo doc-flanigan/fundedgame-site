@@ -146,13 +146,16 @@ export default function BillionPage() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <div className="overflow-hidden rounded-2xl border border-red/15 bg-crimsonMid/40">
+              <figure className="overflow-hidden rounded-2xl border border-red/15 bg-crimsonMid/40">
                 <img
                   src="/images/hero/hero-06.jpg"
-                  alt="Anvil Odin — Star Citizen's largest ship and the last concept ship ever announced"
+                  alt="A starship and ground rover on a misty frontier moon in Star Citizen — illustrative art, not the Anvil Odin"
                   className="h-80 w-full object-cover opacity-80 md:h-96"
                 />
-              </div>
+                <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">
+                  Illustrative Star Citizen ship art — not the Anvil Odin.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

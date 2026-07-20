@@ -168,6 +168,18 @@ export default function HomePage() {
               you may have searched &ldquo;most funded game ever&rdquo; and
               ended up here.
             </p>
+            <figure className="overflow-hidden rounded-2xl border border-red/15 bg-crimsonMid/40">
+              <img
+                src="/images/screenshots/seamless-universe-crusader.jpg"
+                alt="Sunrise over the gas giant Crusader seen from a ship in orbit — an in-game Star Citizen capture"
+                className="h-auto w-full"
+              />
+              <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">
+                Sunrise over Crusader, captured in-game. The seamless universe
+                — planet to orbit with no loading screens — is what backers
+                are paying for.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -278,6 +290,18 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+
+          <figure className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-red/15 bg-crimsonMid/40">
+            <img
+              src="/images/screenshots/rsi-signup-referral-code-field.jpg"
+              alt="RSI signup form with the Referral Code field highlighted, showing code STAR-GCQJ-N6NC successfully applied"
+              className="h-auto w-full"
+            />
+            <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">
+              The Referral Code field on the RSI signup page, with the code
+              applied. The button below fills it in for you automatically.
+            </figcaption>
+          </figure>
 
           <div className="mt-14 flex flex-col items-center justify-center gap-4 md:flex-row">
             <CTAButton trackingLabel="homepage-cta-bottom" />
