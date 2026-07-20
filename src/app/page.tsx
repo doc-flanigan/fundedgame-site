@@ -172,6 +172,9 @@ export default function HomePage() {
               <img
                 src="/images/screenshots/seamless-universe-crusader.jpg"
                 alt="Sunrise over the gas giant Crusader seen from a ship in orbit — an in-game Star Citizen capture"
+                width={3400}
+                height={1913}
+                loading="lazy"
                 className="h-auto w-full"
               />
               <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">
@@ -295,6 +298,9 @@ export default function HomePage() {
             <img
               src="/images/screenshots/rsi-signup-referral-code-field.jpg"
               alt="RSI signup form with the Referral Code field highlighted, showing code STAR-GCQJ-N6NC successfully applied"
+              width={1200}
+              height={1069}
+              loading="lazy"
               className="h-auto w-full"
             />
             <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">

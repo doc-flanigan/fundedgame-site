@@ -150,6 +150,9 @@ export default function BillionPage() {
                 <img
                   src="/images/hero/hero-06.jpg"
                   alt="A starship and ground rover on a misty frontier moon in Star Citizen — illustrative art, not the Anvil Odin"
+                  width={1920}
+                  height={1080}
+                  loading="lazy"
                   className="h-80 w-full object-cover opacity-80 md:h-96"
                 />
                 <figcaption className="border-t border-red/15 px-4 py-3 text-xs text-muted">
