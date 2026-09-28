@@ -272,9 +272,11 @@ export default function HomePage() {
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-silver">
                 A starter pack gets you a permanent account, a starter ship,
-                and access to the persistent universe. The cheapest options,
-                the Citizen Starter Pack (Aurora Mk II) and Generalist Starter
-                Pack (Drake Cutter), are both a one-time $60.
+                and access to the persistent universe. The cheapest options
+                are the Citizen Starter Pack (Aurora Mk II) — a one-time $45
+                on sale, 25% off its $60 list price as of September 2026 —
+                and the Generalist Starter Pack (Drake Cutter) at a one-time
+                $60.
               </p>
             </div>
             <div className="rounded-2xl border border-red/30 bg-red/5 p-7">
