@@ -43,6 +43,15 @@
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
         ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
       }
     ],
     "/billion": [
