@@ -12,6 +12,15 @@
         ]
       },
       {
+        "id": "funding-guinness-world-record",
+        "claim": "Star Citizen is recognized by Guinness World Records as the largest crowdfunded project (and largest crowdfunded video game) in history, a distinction CIG first announced in September 2014.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/14184-Letter-From-The-Chairman",
+          "https://robertsspaceindustries.com/comm-link/SCW/16389-API"
+        ]
+      },
+      {
         "id": "funding-one-billion-may-2026",
         "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
         "status": "verified",
@@ -46,6 +55,16 @@
         ]
       }
     ],
+    "/fact-check": [
+      {
+        "id": "anvil-odin-founders-club-sale-may-2026",
+        "claim": "The Anvil Odin battlecruiser concept sold May 24-25, 2026 (DefenseCon 2956) in six timed waves restricted to 'Odin Founders Club' members only, one per account; the specific warbond/store-credit price figures circulating on fan sites and social media are not confirmed in any CIG comm-link or reachable via the JS-rendered RSI store page.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21133-Anvil-Odin"
+        ]
+      }
+    ],
     "/the-story": [
       {
         "id": "crowdfunding-launch-vs-alpha-start",
@@ -53,6 +72,15 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
+        ]
+      },
+      {
+        "id": "funding-2012-campaign-6-2-million",
+        "claim": "The original 2012 Star Citizen crowdfunding campaign (Kickstarter + RSI site pledges combined) raised a total of about $6.2 million by the time it closed in November 2012.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/comm-link/SCW/13738-API",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12764-1-Million-Dollars-On-Kickstarter"
         ]
       },
       {
