@@ -18,7 +18,14 @@ export const metadata: Metadata = {
     title: 'Star Citizen Just Hit $1 Billion — The Most Crowdfunded Project in History',
     description:
       'On May 24, 2026, Star Citizen crossed one billion dollars raised. The Anvil Odin — the largest ship in the game — pushed it over the line.',
-    images: ['/images/hero/hero-01.jpg'],
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Star Citizen — the highest-funded game in history (unofficial fan site)',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
