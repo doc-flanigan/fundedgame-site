@@ -70,14 +70,28 @@ export const metadata: Metadata = {
       'Star Citizen Just Crossed $1 Billion — The Highest-Funded Game in History',
     description:
       '$1 billion raised. 6.5M backers. No other crowdfunded project — game or otherwise — comes close. Here is the record.',
-    images: ['/images/hero/hero-01.jpg'],
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Star Citizen — the highest-funded game in history (unofficial fan site)',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Star Citizen: $1 Billion Raised — The Most Funded Game Ever',
     description:
       'Star Citizen crossed $1 billion raised on May 24, 2026. The full crowdfunding record, year by year.',
-    images: ['/images/hero/hero-01.jpg'],
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Star Citizen — the highest-funded game in history (unofficial fan site)',
+      },
+    ],
   },
   robots: {
     index: true,
