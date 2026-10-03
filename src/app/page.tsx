@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Is Star Citizen actually released?',
-    a: 'It is playable today as a live alpha — the game has been in open development since 2012. Its single-player campaign, Squadron 42, is a separate title targeting a 2026 release.',
+    a: 'It is playable today as a live alpha — the game has been in open development since 2012. Its single-player campaign, Squadron 42, is a separate title that CIG now targets for Q2 2027, after moving it out of 2026 in the August 27, 2026 Letter from the Chairman.',
   },
 ];
 
