@@ -232,7 +232,7 @@ export default function BillionPage() {
             Star Citizen is still in development — and it&rsquo;s playable
             right now. Sign up with our referral code and you&rsquo;ll get
             50,000 UEC of in-game currency free. Try a Free Fly event, or
-            pick up a starter pack and join the persistent universe today.
+            pick up the First Flight Pack and join the persistent universe today.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
             <CTAButton trackingLabel="billion-page-cta" />

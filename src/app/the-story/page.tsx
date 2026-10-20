@@ -283,8 +283,8 @@ export default function StoryPage() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-silver md:text-lg">
             Sign up with our referral code and you&rsquo;ll get 50,000 UEC of
-            in-game currency free. Try the next Free Fly. Or pick up a
-            starter pack and join the persistent universe today.
+            in-game currency free. Try the next Free Fly. Or pick up the
+            First Flight Pack and join the persistent universe today.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
             <CTAButton trackingLabel="story-page-cta" />

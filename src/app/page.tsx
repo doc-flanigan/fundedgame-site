@@ -268,15 +268,21 @@ export default function HomePage() {
                 Recommended
               </div>
               <h3 className="mt-3 font-display text-2xl text-silverBright">
-                Starter Pack
+                First Flight Pack
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-silver">
-                A starter pack gets you a permanent account, a starter ship,
-                and access to the persistent universe. The cheapest options
-                are the Citizen Starter Pack (Aurora Mk II) — a one-time $45
-                on sale, 25% off its $60 list price as of September 2026 —
-                and the Generalist Starter Pack (Drake Cutter) at a one-time
-                $60.
+                RSI now sells one starter package, the Star Citizen First
+                Flight Pack. It gets you a permanent account, an Aurora Mk II
+                starter ship, and access to the persistent universe, plus
+                30-day loaner access to three more starter ships. It is a
+                one-time $60, often on sale for $45 (as of October 2026).{' '}
+                <a
+                  href="https://dayonecitizen.com/day-one-citizen/starter-package"
+                  className="underline underline-offset-4 hover:text-silverBright"
+                >
+                  See what is in the pack
+                </a>
+                .
               </p>
             </div>
             <div className="rounded-2xl border border-red/30 bg-red/5 p-7">
