@@ -12,6 +12,15 @@
         ]
       },
       {
+        "id": "first-flight-pack-60-usd-aurora",
+        "claim": "RSI's Star Citizen First Flight Pack is a Star Citizen-only game package that includes one Aurora Mk II, 6 Month Insurance, a Self-Land Hangar, 10,000 UEC and the Star Citizen digital download, plus 30-day loaner access to three more starter ships: Drake Golem (mining), MISC Fortune (salvage) and Crusader Intrepid (cargo hauling).",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack",
+          "https://robertsspaceindustries.com/en/store/pledge/browse/game-packages"
+        ]
+      },
+      {
         "id": "funding-guinness-world-record",
         "claim": "Star Citizen is recognized by Guinness World Records as the largest crowdfunded project (and largest crowdfunded video game) in history, a distinction CIG first announced in September 2014.",
         "status": "verified",
@@ -37,20 +46,20 @@
         ]
       },
       {
+        "id": "sq42-release-q2-2027",
+        "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042914633-Where-can-I-download-Squadron-42"
+        ]
+      },
+      {
         "id": "sq42-separate-title-no-live-sp-mode",
         "claim": "Squadron 42 is a separate, not-yet-released single-player title; the live Star Citizen PU has no dedicated single-player campaign mode.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
-        ]
-      },
-      {
-        "id": "starter-package-from-45-usd",
-        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
-          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
